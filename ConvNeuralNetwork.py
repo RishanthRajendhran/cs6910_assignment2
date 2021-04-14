@@ -111,12 +111,12 @@ class ConvNeuralNetwork:
   def guidedBackProp(self, inputs, labels, genGrads = False, randNeuNos = []):
     layerNo = 1   #Best model has only 1 CONV layer
     if randNeuNos == [] or genGrads:
-      # randNeuNos = []
-      # for i in range(10):
-        # neuNo = np.random.randint(32) #WKT number of filters in the only CONV layer is 32
-        # while neuNo in randNeuNos:
-        #   neuNo = np.random.randint(32)
-        # randNeuNos.append(neuNo)
+      randNeuNos = []
+      for i in range(10):
+        neuNo = np.random.randint(32) #WKT number of filters in the only CONV layer is 32
+        while neuNo in randNeuNos:
+          neuNo = np.random.randint(32)
+        randNeuNos.append(neuNo)
       self.modifyBackProp()
       for neuNo in randNeuNos:
         self.generateGrads(inputs, labels, layerNo, neuNo)
@@ -155,21 +155,6 @@ class ConvNeuralNetwork:
     partial = ke.Model(self.model.inputs, self.model.layers[i].output)
     out = partial([inputs], training=False)
     return out
-
-  # def getGrads(self, inputs, labels, layerNo=0, neuNo=0):
-  #     layerNo = 0
-  #     neuNo = 0
-  #     pred = self.model(inputs)
-  #     inputs = tf.convert_to_tensor(inputs, dtype=tf.float32)
-  #     labels = tf.convert_to_tensor(labels, dtype=tf.float32)
-  #     with tf.GradientTape() as tape:
-  #         tape.watch(inputs)
-  #         preds = self.model(inputs)
-  #         preds = tf.convert_to_tensor(preds, dtype=tf.float32)
-  #         loss = ke.losses.CategoricalCrossentropy(labels, preds)
-  #     grads = tape.gradient(loss, inputs)
-  #     print(grads)
-  #     print(grads.shape)
 
   def visualiseFilters(self, inputs, outputs):
     filepath = './best_model/best_model_acc'
