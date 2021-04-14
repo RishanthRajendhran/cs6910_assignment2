@@ -3,7 +3,7 @@
 <h3>Team Members</h3>
   <ol>
     <li><strong>Rishanth. R</strong> (CS18B044)</li> 
-    <li><strong>Rahul Chaurasia</strong> (CS20M002)</li>
+    <li><strong>Rahul Chaurasia</strong> (CS20M002) - <b>No contribution to this repo</b></li>
   </ol>
 <h3>Contents of the files</h3>
   <ul>
