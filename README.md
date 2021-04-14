@@ -5,6 +5,15 @@
     <li><strong>Rishanth. R</strong> (CS18B044)</li> 
     <li><strong>Rahul Chaurasia</strong> (CS20M002) - <b>No contribution to this repo</b></li>
   </ol>
+  <h3>Important Note</h3>
+  <p>
+      Due to 100MB file size limit of Github, data files (train, validation and test set data, gradients data, inaturalist images folders) could not be uploaded in this github repository.
+</p>
+<p>
+      Due to the large sizes of certain data files, the following error was encountered when trying to push code from local repository to online repository:<br/>
+      <em>"fatal: the remote end hung up unexpectedly"</em><br/>
+      Because of this error, several new folders had to be created and the original version control couldn't be retained in the current repository. 
+</p>
 <h3>Contents of the files</h3>
   <ul>
   <li>
@@ -95,9 +104,4 @@
     Run the command 'wandb sweep sweep.yaml' in the project directory in the terminal.<br/>
     Then run the command 'wandb agent %sweep-agent-generated-by-previous-command-here%' to start the sweep.
   </p>
-  <h6>Note</h6>
-  <p>
-        Due to the large sizes of certain data files, the following error was encountered when trying to push code from local repository to online repository:<br/>
-        <em>"fatal: the remote end hung up unexpectedly"</em><br/>
-        Because of this error, several new folders had to be created and the original version control couldn't be retained in the current repository. 
-  </p>
+
