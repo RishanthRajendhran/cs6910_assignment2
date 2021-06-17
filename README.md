@@ -1,9 +1,7 @@
-# cs6910_assignment2
-<h1>CS6910 Assignment 2</h1>
+<h1>Image Classification using CNNs</h1>
 <h3>Team Members</h3>
   <ol>
     <li><strong>Rishanth. R</strong> (CS18B044)</li> 
-    <li><strong>Rahul Chaurasia</strong> (CS20M002) - <b>No contribution to this repo</b></li>
   </ol>
   <h3>Important Note</h3>
   <p>
